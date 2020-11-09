@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+.form__label p {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f0f0f;
+}
+
+.form__btn {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+  background: #D3362A;
+  border-radius: 6px;
+}
+
+.form__input {
+  width: 100%;
+  height: 20px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border-width: 1px;
+}
+
+.form__inputD {
+  width: 100%;
+  height: 150px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border-width: 1px;
+}
+
+.form h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f0f0f;
+}
+
+header {
+  background: #1E1E1E;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerlogo {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.headerlogo img {
+  width: 200px;
+}
+
+.halfinfo {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 20%;
+  margin-right: 20px;
+}
+
+.halfinfo__items {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.halfinfo__items h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: white;
+}
+
+.searchinput input {
+  background: #D3362A;
+  height: 40px;
+  width: 200px;
+  border-radius: 6px;
+}
+
+.cartbtn img {
+  border-radius: 6px;
+  width: 80px;
+}
+
+.brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  background: #353535;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brands h2 {
+  margin-left: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+.freeshipping {
+  width: 100%;
+  text-align: center;
+}
+
+.freeshipping h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+.freeshipping h3 strong {
+  color: #D3362A;
+}
+
+.product {
+  width: 20%;
+  padding: 45px;
+}
+
+.product__img {
+  width: 100%;
+}
+
+.product__info {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+
+.product__price {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f0f0f;
+}
+
+.productList {
+  width: 100%;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  background-color: #252525;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info {
+  padding: 20px;
+  width: 30%;
+}
+
+footer h3 {
+  color: #D3362A;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20;
+}
+
+@media (max-width: 600px) {
+  footer h3 {
+    font-size: 10px;
+  }
+}
+
+footer p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  footer p {
+    font-size: 5px;
+  }
+}
+
+.productshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.imagen {
+  width: 50%;
+}
+
+.imagen img {
+  width: 80%;
+}
+
+.seleccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.seleccion button {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e1e1e;
+  background: #D3362A;
+  border-radius: 6px;
+  width: 40%;
+}
+
+.seleccion input {
+  width: 5%;
+  height: 20px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  border-width: 1px;
+}
+
+.seleccion h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+
+.productshow h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f0f0f;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #D3362A;
+}
+
+h6 {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 50%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0f0f0f;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
