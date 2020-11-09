@@ -22,3 +22,29 @@ const login = document.querySelector('.form');
           });
     
     });
+
+    const signOut = document.querySelector('.signOut');
+
+    signOut.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+    
+    
+        firebase.auth().signOut()
+      
+    
+            .then(function () {
+                window.location.href = 'productos.html';
+            
+        })
+        
+        .catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+    
+            signUp.querySelector('.form__error').classList.remove('hidden');
+            // ...
+          });
+    
+    });

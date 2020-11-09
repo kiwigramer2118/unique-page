@@ -197,7 +197,7 @@ header {
   color: #0f0f0f;
 }
 
-.productList {
+.productList, .productListFord {
   width: 100%;
   margin-top: 100px;
   display: -webkit-box;

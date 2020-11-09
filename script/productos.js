@@ -19,8 +19,30 @@ const productList = document.querySelector('.productList');
     });
   }
 
+//productos ford
+const productListFord = document.querySelector('.productListFord');
 
-  //descripcion del producto 
+   //creacion de los productos a nivel visual
+  
+  function renderProductsFord (listFord) {
+    productListFord.innerHTML = '';
+    listFord.forEach(function (elemF) {
+      if(elemF.brand =="ford"){
+      const newProductFord =  document.createElement('article');
+      newProductFord.classList.add('product');
+       
+      newProductFord.innerHTML = `
+      <a href="./producto.html?${elemF.id}"><img class="product__img" src="${elemF.img}" alt=""></a> 
+      <div class="product__info">
+          <p class="title">${elemF.name}</p>
+          <p class="product__price">$ ${elemF.price}</p>
+      </div>
+      `;
+      
+      productListFord.appendChild(newProductFord);
+     } });
+  }
+ 
 
   
 var products = [];
@@ -38,7 +60,10 @@ function getProducts() {
     });
 
     renderProducts(products);
+    renderProductsFord(products);
 });
 }
   
 getProducts();
+
+

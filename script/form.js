@@ -5,6 +5,7 @@ form.addEventListener('submit', function (event) {
     const newProduct = {
       name: form.name.value,
       price: form.price.value,
+      brand: form.brand.value,
       descrip: form.descrip.value,
       img: form.img.value
     };
