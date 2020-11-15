@@ -15,5 +15,29 @@ document.querySelector('article img').setAttribute('src',product.img);
 document.querySelector('h5').innerText= "$"+product.price;
 document.querySelector('h6').innerText= product.descrip;
 
+const addCart = document.querySelector('.addCart');
+addCart.addEventListener('click', function(event){
+        event.preventDefault();
+        
+        if(userInfo){
+          usersRef.doc(userInfo.uid).collection('shoppingCar').doc(elem.id).set(
+            {
+              name: product.name,
+              price: product.price,
+              img: product.img,
+            }
+
+          ).then(function(){
+            alert('agregado');
+          }).catch(function(error){
+            console.log(error.message);
+          })
+
+        } else {
+          alert('No has iniciado sesión')
+        }
+      });
+
+
 
 });

@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body >
+<body class="general">
     <header>
         <section class="banner">
 <section class="headerlogo">
@@ -15,12 +15,15 @@
         <section class="halfinfo">
 
            <div class="halfinfo__items">
-            <h1>sign in</h1>
+           <a class="auth__without" href="./login.html"><h1>sign in</h1></a> 
+           <a class="auth__with hidden"  href="./cerrar.html"><h1>name</h1></a> 
+
             <div class="searchinput"><input type="text" ></div>
         </div>
 
         <div class="halfinfo__items">
-            <h1>Create acount</h1>
+
+          <a href="./register.html"><h1>Create acount</h1></a>  
             <div class="cartbtn">
                 <img src="./images/cart.png" alt="">
             </div>
@@ -32,7 +35,7 @@
 <h2>AUDI</h2>
 <h2>BMW</h2>
 <h2>VOLKSWAGEN</h2>
-<h2>FORD</h2>
+<a href="ford.html"><h2>FORD</h2></a>
 <h2>MERCEDES BENZ</h2>
 
       </section>
@@ -41,66 +44,46 @@
         <h3> <strong> Free shipping</strong> on 100$+ orders</h3>
               </section>
     </header>
-
-    <article class="productshow">
-
-       <div class="imagen">
-        <img src="http://127.0.0.1:5500/images/fiesta%20st%20coilovers.jpg" alt="">
-       </div> 
-
-       <div class="seleccion">
-        <h4>
-            titulo
-        </h4>
-        
-        
-        <h5>5.000</h5>
-        <h2>Quantity</h2>
-        <input type="text">
-
-        <button class="addCart" >Add to cart</button>
-       </div>
-
-
-
-    </article>
-    <p><h6>5.000</h6></p>
+<section class="productCart">
     
+
+</section>
+<footer>
+    <div class="info">
+    <h3>
+        CONTACTS
+    </h3>
+    <p>
+        3989 E Endeavor Dr. Appleton, WI 54915 <br>
+        Hours: Mon-Fri 9AM-5:00PM CST <br>
+        Showroom Hours: M-F 1:00PM - 5:00PM CST
+    </p>
     
-    <footer>
-        <div class="info">
+    </div>
+    
+    <div class="info">
         <h3>
-            CONTACTS
+            OUR TOOLS
         </h3>
         <p>
-            3989 E Endeavor Dr. Appleton, WI 54915 <br>
-            Hours: Mon-Fri 9AM-5:00PM CST <br>
-            Showroom Hours: M-F 1:00PM - 5:00PM CST
+            Videos <br>
+            Calculators <br>
+            About Us <br>
+            Financing 
         </p>
         
         </div>
         
-        <div class="info">
-            <h3>
-                OUR TOOLS
-            </h3>
-            <p>
-                Videos <br>
-                Calculators <br>
-                About Us <br>
-                Financing 
-            </p>
-            
-            </div>
-            
-        
-        </footer>
+    
+    </footer>
 
     
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
     <script src="./script/firebase.js"></script>
+    <script src="./script/productos.js"></script>
     <script src="./script/auth.js"></script>
-    <script src="./script/producto.js"></script>
+
 </body>
 </html>
