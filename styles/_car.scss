@@ -1,0 +1,43 @@
+.productCar{
+    display: flex;
+flex-direction: row;
+justify-items: left;
+align-items: center;
+margin-bottom: 20px;
+    width: 80%;
+
+    &__img{ width:50%}
+    &__info{
+       
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: rgb(15, 15, 15);
+    }
+    &__price{
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(15, 15, 15);
+    }
+
+
+}
+.carDelete{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(15, 15, 15);
+    height: 10%;
+    border-radius: 10px;
+}
+
+.carList {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+   flex-direction: column;
+ 
+   align-items: center;
+justify-content: center;
+}

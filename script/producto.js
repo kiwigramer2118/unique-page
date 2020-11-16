@@ -1,4 +1,5 @@
 const parts  =location.search.split('-');
+const productsRef = db.collection("elementos");
 const uid= parts[0].replace('?',"");
 var product;
 var userId = localStorage.getItem('userId');
@@ -19,6 +20,20 @@ document.querySelector('h6').innerText= product.descrip;
 
 });
 
+const deleteBtn = document.querySelector('.Delete');
+
+        deleteBtn.addEventListener('click', function(){
+            productsRef.doc(uid).delete().then(function(){
+              getProducts();
+              alert("Producto eliminado correctamente");
+            }).catch(function(error){
+             
+              window.location.href = 'productos.html';
+            });
+        });
+      
+
+
 const addCart = document.querySelector('.addCart');
 
 addCart.addEventListener('click', function(event){
@@ -32,4 +47,13 @@ addCart.addEventListener('click', function(event){
 
         );
       
-      });
+   alert("added to")   });
+
+   const editBtn = document.querySelector('.Edit');
+
+        editBtn.addEventListener('click', function(){
+
+          const urlEdit = `edit.html?${uid}`;
+          window.location.href = urlEdit;
+            
+        });

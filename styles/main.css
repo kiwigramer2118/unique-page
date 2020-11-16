@@ -217,6 +217,16 @@ header {
           justify-content: center;
 }
 
+.AddP {
+  height: 50%;
+  background-color: #D3362A;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20;
+  width: 100%;
+  border-radius: 5px;
+}
+
 footer {
   background-color: #252525;
   width: 100%;
@@ -298,9 +308,21 @@ footer p {
   font-size: 20px;
   font-weight: 600;
   color: #1e1e1e;
-  background: #D3362A;
   border-radius: 6px;
   width: 40%;
+  margin-bottom: 10px;
+}
+
+.addCart {
+  background: #D3362A;
+}
+
+.Edit {
+  background: #2a65d3;
+}
+
+.Delete {
+  background: #D3362A;
 }
 
 .seleccion input {
@@ -344,5 +366,66 @@ h6 {
 
 .hidden {
   display: none;
+}
+
+.productCar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.productCar__img {
+  width: 50%;
+}
+
+.productCar__info {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+
+.productCar__price {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f0f0f;
+}
+
+.carDelete {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0f0f0f;
+  height: 10%;
+  border-radius: 10px;
+}
+
+.carList {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="./Styles/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
     <header>
@@ -44,29 +45,30 @@
         <h3> <strong> Free shipping</strong> on 100$+ orders</h3>
               </section>
     </header>
-  
-      <div class="signOut">
-        <form class="form">
-            <h3> sure you want to log out?</h3>
-        
-         
-          
-           
-            <button type="submit" class="form__btn">Confirm</button>
-          
-    
-        </form>
-      </div>
-    
-  
-
-                 
-                    
-                
-            
-      
-
- 
+    <form class="form">
+        <h3>Edit</h3>
+        <label class="form__label"> 
+            <p>Name</p> 
+            <input class="form__input" name="name" type="text">
+        </label>
+        <label class="form__label"> 
+            <p>Description</p> 
+            <input class="form__inputD" name="descrip" type="text">
+        </label>
+        <label class="form__label">
+            <p>Price</p>
+            <input class="form__input" name="price" type="text">
+        </label>
+        <label class="form__label">
+            <p>Brand</p>
+            <input class="form__input" name="brand" type="text">
+        </label>
+        <label class="form__label">
+            <p>Image</p>
+            <input class="form__input" name="img" type="text">
+        </label>
+        <button class="form__btn">Edit</button>
+    </form>
     <footer>
         <div class="info">
         <h3>
@@ -95,13 +97,9 @@
             
         
         </footer>
-    
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
     <script src="./script/firebase.js"></script>
-    <script src="./script/login.js"></script>
- 
-    
+    <script src="./script/edit.js"></script>
 </body>
 </html>

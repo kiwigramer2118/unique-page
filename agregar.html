@@ -11,19 +11,22 @@
     <header>
         <section class="banner">
 <section class="headerlogo">
-<img src="/images/logo.png" alt="">
+    <a href="./productos.html"><img src="/images/logo.png" alt=""></a>
 </section>
         <section class="halfinfo">
 
            <div class="halfinfo__items">
-            <h1>sign in</h1>
-            <div class="searchinput"><input type="text" ></div>
+           <a class="auth__without" href="./login.html"><h1>sign in</h1></a> 
+           <a class="auth__with hidden"  href="./cerrar.html"><h1>name</h1></a> 
+
+           <a href="./agregar.html"><button class="AddP hidden showAdmin">Add product</button></a>
         </div>
 
         <div class="halfinfo__items">
-            <h1>Create acount</h1>
+
+          <a href="./register.html"><h1>Create acount</h1></a>  
             <div class="cartbtn">
-                <img src="./images/cart.png" alt="">
+                <a href="./cart.html"><img src="./images/cart.png" alt=""></a>
             </div>
            </div>
            
@@ -33,7 +36,7 @@
 <h2>AUDI</h2>
 <h2>BMW</h2>
 <h2>VOLKSWAGEN</h2>
-<h2>FORD</h2>
+<a href="ford.html"><h2>FORD</h2></a>
 <h2>MERCEDES BENZ</h2>
 
       </section>
@@ -96,7 +99,9 @@
         </footer>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
     <script src="./script/firebase.js"></script>
+    <script src="./script/auth.js"></script>
     <script src="./script/form.js"></script>
 </body>
 </html>

@@ -28,10 +28,23 @@
     font-size: 20px;
     font-weight: 600;
     color: rgb(30, 30, 30);
-    background: #D3362A;
+   
     border-radius: 6px;
     width: 40%;
+    margin-bottom: 10px;
 
+}
+.addCart{
+    background: #D3362A;
+
+}
+
+.Edit{
+    background: #2a65d3;
+
+}
+.Delete{
+    background: #D3362A;
 }
 .seleccion input{
     width: 5%;

@@ -19,8 +19,19 @@ firebase.auth().onAuthStateChanged(function(user) {
                 authWith.innerHTML = `
                 <h1>${data.name}</h1>
                 `;
+if(data.admin){
+    const showAdmin=document.querySelectorAll('.showAdmin');
+    showAdmin.forEach(function(elemn){
+        elemn.classList.remove('hidden');
+
+    }
+    );
+}
+             
+
                
             }
+
         });
 
     }else {
@@ -32,3 +43,5 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
     window.localStorage.setItem("userId", user.uid);
   });
+  
+  
