@@ -1,6 +1,7 @@
 const authWithout = document.querySelector('.auth__without');
 const authWith = document.querySelector('.auth__with');
-var userInfo;
+
+
 
 
 firebase.auth().onAuthStateChanged(function(user) {
@@ -14,12 +15,11 @@ firebase.auth().onAuthStateChanged(function(user) {
 
         usersRef.doc(user.uid).get().then(function (doc){
             if(doc.exists) {
-                userInfo = data;
-                userInfo.uid = user.uid;
                 const data = doc.data();
                 authWith.innerHTML = `
                 <h1>${data.name}</h1>
                 `;
+               
             }
         });
 
@@ -30,4 +30,5 @@ firebase.auth().onAuthStateChanged(function(user) {
         authWithout.classList.remove('hidden');
 
     }
+    window.localStorage.setItem("userId", user.uid);
   });

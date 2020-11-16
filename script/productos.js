@@ -1,5 +1,9 @@
-const productList = document.querySelector('.productList');
 
+
+
+
+const productList = document.querySelector('.productList');
+const productsRef = db.collection("elementos");
    //creacion de los productos a nivel visual
   function renderProducts (list) {
     productList.innerHTML = '';
@@ -26,8 +30,8 @@ var products = [];
 //aqui llamo los productos de la base de datos
 
 function getProducts() {
-  db.collection("elementos").get().then((querySnapshot) => {
-    products.splice(0, products.length);
+  productsRef.onSnapshot(function (querySnapshot) {
+    var products = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
@@ -36,7 +40,7 @@ function getProducts() {
     });
 
     renderProducts(products);
-    renderProductsFord(products);
+    
 });
 }
   

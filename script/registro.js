@@ -29,7 +29,7 @@ registro.addEventListener('submit', function(event) {
         var errorCode = error.code;
         var errorMessage = error.message;
 
-        signUp.querySelector('.form__error').classList.remove('hidden');
+        document.querySelector('.form__error').classList.remove('hidden');
         // ...
       });
 
