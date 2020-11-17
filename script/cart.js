@@ -2,8 +2,8 @@ const productCart = document.querySelector('.carList');
 var userId = localStorage.getItem('userId');
 const usersRef = db.collection("users");
 const carRef = usersRef.doc(userId).collection('shoppingCar');
-var elemPrice;
-var total;
+var elemPrice=0;
+var total=0;
    //creacion de los productos a nivel visual
   function renderProductsCar (list) {
     productCart.innerHTML = '';
@@ -25,8 +25,16 @@ var total;
 
       `;
 
-    elemPrice=parseInt(elem.price);
-    total= total+ elemPrice;
+    elemPrice+=parseInt(elem.price);
+  
+
+    console.log(elemPrice);
+
+    const totalPrice =  document.querySelector('.total');
+    totalPrice.innerHTML = `
+    
+        <p> total amount: $${elemPrice}</p>
+    `;
     
       productCart.appendChild(newProduct);
 
@@ -47,15 +55,7 @@ var total;
 
     });
   }
-  const totalPrice =  document.querySelector('.total');
-  totalPrice.innerHTML = `
-  
-      <p class="productCar__title">${total}</p>
-      
-  
- 
 
-  `;
 
 
 
