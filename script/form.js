@@ -15,6 +15,7 @@ form.addEventListener('submit', function (event) {
     db.collection("elementos").add(newProduct)
     .then(function(docRef) {
         console.log("Document written with ID: ", docRef.id);
+        window.location.href = 'index.html';
     })
     .catch(function(error) {
         console.error("Error adding document: ", error);

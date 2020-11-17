@@ -10,7 +10,7 @@ const login = document.querySelector('.form');
         firebase.auth().signInWithEmailAndPassword(email, passWord)
         .then(function () {
     
-            window.location.href = 'productos.html';
+            window.location.href = 'index.html';
         })
         
         .catch(function(error) {
