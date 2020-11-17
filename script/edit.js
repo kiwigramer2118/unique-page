@@ -52,5 +52,5 @@ form.addEventListener('submit', function (event) {
 
 form.addEventListener('reset', function (event){
   event.preventDefault();
-  location.href = 'productos.html';
+  location.href = 'index.html';
 });

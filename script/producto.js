@@ -28,7 +28,7 @@ const deleteBtn = document.querySelector('.Delete');
               alert("Producto eliminado correctamente");
             }).catch(function(error){
              
-              window.location.href = 'productos.html';
+              window.location.href = 'index.html';
             });
         });
       

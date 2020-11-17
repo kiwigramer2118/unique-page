@@ -20,7 +20,7 @@ registro.addEventListener('submit', function(event) {
         })
 
         .then(function () {
-            window.location.href = 'productos.html';
+            window.location.href = 'index.html';
         })
     })
     
