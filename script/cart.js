@@ -2,6 +2,7 @@ const productCart = document.querySelector('.carList');
 var userId = localStorage.getItem('userId');
 const usersRef = db.collection("users");
 const carRef = usersRef.doc(userId).collection('shoppingCar');
+const check =  document.querySelector('.checkOut');
 var elemPrice=0;
 var total=0;
    //creacion de los productos a nivel visual
@@ -10,7 +11,8 @@ var total=0;
     list.forEach(function (elem) {
      
      
-
+window.localStorage.setItem("productId",elem.id);
+window.localStorage.setItem("total",elemPrice);
       const newProduct =  document.createElement('article');
       newProduct.classList.add('productCar');
        
@@ -20,6 +22,7 @@ var total=0;
           <p class="productCar__title">${elem.name}</p>
           <p class="productCar__price">$ ${elem.price}</p>
       </div>
+      
       <button class="carDelete">X</button>
      
 
@@ -29,7 +32,8 @@ var total=0;
   
 
     console.log(elemPrice);
-
+    
+    
     const totalPrice =  document.querySelector('.total');
     totalPrice.innerHTML = `
     

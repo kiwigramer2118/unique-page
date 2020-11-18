@@ -19,6 +19,7 @@
            <a class="auth__with hidden"  href="./cerrar.html"><h1>name</h1></a> 
 
             <a href="./agregar.html"><button class="AddP hidden showAdmin">Add product</button></a>
+            <a href="./orders.html"><button class="AddP hidden showAdmin">Orders</button></a>
         </div>
 
         <div class="halfinfo__items">
@@ -31,14 +32,26 @@
            
         </section>
     </section>
+    <form class="filterForm">
       <section class="brands">
-<h2>AUDI</h2>
-<h2>BMW</h2>
+         
+<h2>ALL BRANDS</h2><label> <input type="radio" name="name" value="" checked> </label>
+<h2>BMW</h2> <label> <input type="radio" name="name" value="BMW"> </label>
 <h2>VOLKSWAGEN</h2>
-<a href="ford.html"><h2>FORD</h2></a>
+<h2>FORD</h2> <label ><input type="radio" name="name" value="FORD"></label>
 <h2>MERCEDES BENZ</h2>
 
+<label >
+<select name="order">
+    <option value="">relevant</option>
+    <option value="price_asc">price ascend</option>
+    <option value="price_desc">price descend</option>
+   
+</select>
+</label>
+
       </section>
+    </form>
 
       <section class="freeshipping">
         <h3> <strong> Free shipping</strong> on 100$+ orders</h3>

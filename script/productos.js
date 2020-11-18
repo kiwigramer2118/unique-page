@@ -31,19 +31,84 @@ var products = [];
 
 function getProducts() {
   productsRef.onSnapshot(function (querySnapshot) {
-    var products = [];
+     products = [];
     querySnapshot.forEach((doc) => {
         const obj = doc.data();
         obj.id = doc.id;
         products.push(obj);
         console.log(`${doc.id} => ${doc.data()}`);
+
+
+        let copy = products.slice();
+        const filterForm= document.querySelector('.filterForm');
+        filterForm.addEventListener('change', function(){
+          const order = filterForm.order.value;
+          
+
+          switch(order){
+            case "":
+              copy = products.slice();
+              break;
+            case "price_asc":
+              copy.sort(function(a, b){
+                return a.price - b.price;
+              });
+            break;
+            case "price_desc":
+              copy.sort(function(a, b){
+                return b.price - a.price;
+              });
+            break;
+          }
+
+
+
+          
+          
+          const nameFilter= filterForm.name.value;
+          copy =copy.filter(function(elem){
+
+            if(nameFilter===''){
+    
+              return true;
+              
+                      }
+
+            if(nameFilter==='FORD'&& elem.name.includes('FORD')){
+    
+    return true;
+    
+            }
+            if(nameFilter==='BMW'&& elem.name.includes('BMW')){
+    
+              return true;
+              
+                      }
+                      
+          
+              return false;
+          
+    
+          });
+          console.log(order);
+          renderProducts(copy);
+          
+        });
+
+       
     });
 
-    renderProducts(products);
+
     
+    renderProducts(products);
 });
+
 }
-  
+
+
+
+    
 getProducts();
+
 
 

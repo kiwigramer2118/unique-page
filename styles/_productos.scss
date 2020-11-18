@@ -19,7 +19,12 @@ header{
     margin-left: 50px;
 }
 .headerlogo img{
+
     width: 200px;
+
+    @media (max-width: 750PX) {
+        width: 150px;
+    }
 }
 
 
@@ -30,17 +35,30 @@ header{
     flex-direction: row;
    margin-left: 20%;
    margin-right: 20px;
+   @media (max-width: 750PX) {
+    margin-bottom: 10px;
+   
+    margin-right: 10px;
+}
+
+
 &__items{
 
     margin-left: 20px;
   text-align: right;
- 
+  @media (max-width: 750PX) {
+    margin-left: 10px;
+}
 }
 &__items h1{
     font-family: 'Lato', sans-serif;
     font-size: 13px;
     font-weight: 300;
     color: rgb(255, 255, 255);
+
+    @media (max-width: 750PX) {
+        font-size: 7px;
+    }
  
 }
 }
@@ -57,6 +75,10 @@ width: 200px;
 border-radius: 6px;
 
 width: 80px;
+@media (max-width: 750PX) {
+    width: 50px;
+}
+
 }
 
 .brands{
@@ -75,6 +97,11 @@ width: 80px;
     font-size: 16px;
     font-weight: 300;
     color: rgb(255, 255, 255);
+
+    @media (max-width: 750PX) {
+        font-size: 10px;
+        margin-left: 30px;
+    }
  
 
 }
@@ -95,6 +122,10 @@ width: 80px;
     font-size: 25px;
     font-weight: 400;
     color: rgb(255, 255, 255);
+    @media (max-width: 750PX) {
+        font-size: 15px;
+        
+    }
    
 }
 
@@ -107,18 +138,30 @@ color: #D3362A;
 
     width: 20%;
 padding: 45px;
+@media (max-width: 750PX) {
+    padding: 20px;
+    
+}
     &__img{ width: 100%}
     &__info{
         font-family: 'Lato', sans-serif;
         font-size: 15px;
         font-weight: 300;
         color: rgb(15, 15, 15);
+        @media (max-width: 750PX) {
+            font-size: 7px;
+            
+        }
     }
     &__price{
         font-family: 'Lato', sans-serif;
         font-size: 15px;
         font-weight: 400;
         color: rgb(15, 15, 15);
+        @media (max-width: 750PX) {
+            font-size: 7px;
+            
+        }
     }
 
 
@@ -134,13 +177,17 @@ padding: 45px;
 justify-content: center;
 }
 .AddP{
-    height: 50%;
+    height: 25%;
    background-color:#D3362A;
    color: white;
    font-family: 'Roboto', sans-serif;
-   font-size: 20;
+   font-size: 15px;
     width: 100%;
     border-radius: 5px;
+    @media (max-width: 750PX) {
+        font-size: 7px;
+        
+    }
 }
 footer{
     background-color:rgb(37, 37, 37);
@@ -162,7 +209,7 @@ footer h3 {
      color: #D3362A;
      font-family: 'Roboto', sans-serif;
      font-size: 20;
-     @media (max-width: 600px) {
+     @media (max-width: 750px) {
         font-size: 10px;
     }
 }
@@ -174,4 +221,7 @@ footer p {
     @media (max-width: 600px) {
         font-size: 5px;
     }
+}
+.filterForm{
+    
 }

@@ -68,6 +68,13 @@
   color: #0f0f0f;
 }
 
+.form h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f0f0f;
+}
+
 header {
   background: #1E1E1E;
 }
@@ -95,6 +102,12 @@ header {
   width: 200px;
 }
 
+@media (max-width: 750PX) {
+  .headerlogo img {
+    width: 150px;
+  }
+}
+
 .halfinfo {
   margin-bottom: 20px;
   display: -webkit-box;
@@ -108,9 +121,22 @@ header {
   margin-right: 20px;
 }
 
+@media (max-width: 750PX) {
+  .halfinfo {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
 .halfinfo__items {
   margin-left: 20px;
   text-align: right;
+}
+
+@media (max-width: 750PX) {
+  .halfinfo__items {
+    margin-left: 10px;
+  }
 }
 
 .halfinfo__items h1 {
@@ -118,6 +144,12 @@ header {
   font-size: 13px;
   font-weight: 300;
   color: white;
+}
+
+@media (max-width: 750PX) {
+  .halfinfo__items h1 {
+    font-size: 7px;
+  }
 }
 
 .searchinput input {
@@ -130,6 +162,12 @@ header {
 .cartbtn img {
   border-radius: 6px;
   width: 80px;
+}
+
+@media (max-width: 750PX) {
+  .cartbtn img {
+    width: 50px;
+  }
 }
 
 .brands {
@@ -158,6 +196,13 @@ header {
   color: white;
 }
 
+@media (max-width: 750PX) {
+  .brands h2 {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+}
+
 .freeshipping {
   width: 100%;
   text-align: center;
@@ -170,6 +215,12 @@ header {
   color: white;
 }
 
+@media (max-width: 750PX) {
+  .freeshipping h3 {
+    font-size: 15px;
+  }
+}
+
 .freeshipping h3 strong {
   color: #D3362A;
 }
@@ -177,6 +228,12 @@ header {
 .product {
   width: 20%;
   padding: 45px;
+}
+
+@media (max-width: 750PX) {
+  .product {
+    padding: 20px;
+  }
 }
 
 .product__img {
@@ -190,11 +247,23 @@ header {
   color: #0f0f0f;
 }
 
+@media (max-width: 750PX) {
+  .product__info {
+    font-size: 7px;
+  }
+}
+
 .product__price {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #0f0f0f;
+}
+
+@media (max-width: 750PX) {
+  .product__price {
+    font-size: 7px;
+  }
 }
 
 .productList, .productListFord {
@@ -218,13 +287,19 @@ header {
 }
 
 .AddP {
-  height: 50%;
+  height: 25%;
   background-color: #D3362A;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 20;
+  font-size: 15px;
   width: 100%;
   border-radius: 5px;
+}
+
+@media (max-width: 750PX) {
+  .AddP {
+    font-size: 7px;
+  }
 }
 
 footer {
@@ -249,7 +324,7 @@ footer h3 {
   font-size: 20;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   footer h3 {
     font-size: 10px;
   }
@@ -396,6 +471,12 @@ h6 {
   width: 80%;
 }
 
+@media (max-width: 750PX) {
+  .productCar {
+    margin-bottom: 10px;
+  }
+}
+
 .productCar__img {
   width: 50%;
 }
@@ -407,11 +488,23 @@ h6 {
   color: #0f0f0f;
 }
 
+@media (max-width: 750PX) {
+  .productCar__info {
+    font-size: 8px;
+  }
+}
+
 .productCar__price {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #0f0f0f;
+}
+
+@media (max-width: 750PX) {
+  .productCar__price {
+    font-size: 8px;
+  }
 }
 
 .carDelete {
@@ -421,6 +514,12 @@ h6 {
   color: #0f0f0f;
   height: 10%;
   border-radius: 10px;
+}
+
+@media (max-width: 750PX) {
+  .carDelete {
+    font-size: 8px;
+  }
 }
 
 .carList {
@@ -441,6 +540,12 @@ h6 {
           justify-content: center;
 }
 
+@media (max-width: 750PX) {
+  .carList {
+    margin-top: 10px;
+  }
+}
+
 .total {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
@@ -448,5 +553,11 @@ h6 {
   color: #0f0f0f;
   text-align: right;
   margin-right: 20%;
+}
+
+@media (max-width: 750PX) {
+  .total {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
