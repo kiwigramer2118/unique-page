@@ -196,7 +196,7 @@ header {
   color: white;
 }
 
-@media (max-width: 750PX) {
+@media (max-width: 820PX) {
   .brands h2 {
     font-size: 10px;
     margin-left: 30px;
@@ -339,6 +339,24 @@ footer p {
 @media (max-width: 600px) {
   footer p {
     font-size: 5px;
+  }
+}
+
+select {
+  width: 80px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0f0f0f;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+@media (max-width: 750PX) {
+  select {
+    font-size: 7px;
+    margin-left: 10px;
+    width: 50px;
   }
 }
 
